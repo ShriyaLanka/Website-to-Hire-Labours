@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Web Application To Hire Labourers</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+     <section class="sub-header" style="margin-top: 0px;">
+       <nav>
+         <div id="logo">
+           <img src="static/logo4.jpg">
+         </div>
+         <div class="nav-links" id="navLinks">
+           <i class="fa fa-times" onclick="hideMenu()"></i>
+           <ul>
+             <li><a href="/">HOME</a></li>
+             <li><a href="">ABOUT</a></li>
+             <li><a href="">DESIGN</a></li>
+           </ul>
+        </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+       </nav>
+       <h1>About Us</h1>
+   </section>
+   <!---About Us content---->
+   <section class="about-us">
+     <div class="row">
+       <div class="about-col">
+         <h1>We are here to give you the best experience</h1>
+         <p>Building a house is an event that takes place only 1 or 2 times in one’s lifetime. Plan wisely and plan with a lot of options.</p>
+         <a href=""class="hero-btn red-btn">EXPLORE NOW</a>
+       </div>
+       <div class="about-col">
+         <img src="static/About us image1.png">
+       </div>
+     </div>
+   </section>
+   <section class="footer">
+     <h4>About Us</h4>
+     <p>One of the biggest achievements in life is considered to be building one’s own house. Whether you are building a home on a plot or have recently purchased an apartment flat, our website helps you with all your planning and design needs without needing a time consuming and expensive visit to an engineer or a designer.</p>
+     <div class="icons">
+       <i class="fa fa-facebook"></i>
+       <i class="fa fa-twitter"></i>
+       <i class="fa fa-instagram"></i>
+       <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Have Made Your Work Easy <i class="fa fa-heart-o"></i></p>
+   </section>
+  <!---JavaScript for Toggle Menu---->
+     <script>
+        var navLinks= document.getElementsById("navLinks");
+        function showMenu(){
+          navLinks.style.right="0";
+        }
+        function hideMenu(){
+          navLinks.style.right="-200px";
+        }
+     </script>
+  </body>
+</html>

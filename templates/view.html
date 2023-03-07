@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Web Application To Hire Labourers</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+     <section class="header">
+       <nav>
+         <div id="logo">
+           <img src="static/logo4.jpg">
+         </div>
+         <div class="nav-links" id="navLinks">
+           <i class="fa fa-times" onclick="hideMenu()"></i>
+           <ul>
+             <li><a href="">HOME</a></li>
+             <li><a href="About">ABOUT</a></li>
+             <li><a href="/exterior">EXTERIOR DESIGNING</a></li>
+             <li><a href="/interior">INTERIOR DESIGNING</a></li>
+           </ul>
+        </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+
+       </nav>
+       <div class='table' >
+        {% for row in rows %}
+            <hr>
+            <div>
+                {% for i in range(row|length) %}
+                    <p>{{keys[i]}} : {{row[i]}}</p>
+                {% endfor %}
+            </div>
+        {% endfor %}
+       </div>
+    </section>
+
+  
+  </body>
+  <!---JavaScript for Toggle Menu-->
+  <script>
+    var navLinks= document.getElementsById("navLinks");
+    function showMenu(){
+      navLinks.style.right="0";
+    }
+    function hideMenu(){
+      navLinks.style.right="-200px";
+    }
+ </script>
+</html>
